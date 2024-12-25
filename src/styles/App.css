@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.img-thumbnail {
+  cursor: pointer;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

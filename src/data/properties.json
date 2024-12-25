@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "type": "House",
+    "price": 500000,
+    "bedrooms": 3,
+    "dateAdded": "2024-01-15",
+    "postcode": "BR1",
+    "description": "Beautiful 3-bedroom house in BR1.",
+    "images": ["/images/property1_1.jpg", "/images/property1_2.jpg"],
+    "longDescription": "A stunning property with modern amenities...",
+    "floorPlan": "/floorplans/property1.pdf",
+    "map": "https://maps.google.com/?q=BR1"
+  },
+  {
+    "id": 2,
+    "type": "Flat",
+    "price": 300000,
+    "bedrooms": 2,
+    "dateAdded": "2024-02-01",
+    "postcode": "NW1",
+    "description": "Cozy flat in NW1.",
+    "images": ["/images/property2_1.jpg", "/images/property2_2.jpg"],
+    "longDescription": "Perfect for small families...",
+    "floorPlan": "/floorplans/property2.pdf",
+    "map": "https://maps.google.com/?q=NW1"
+  },
+  {
+    "id": 3,
+    "type": "Flat",
+    "price": 300000,
+    "bedrooms": 2,
+    "dateAdded": "2024-02-01",
+    "postcode": "NW1",
+    "description": "Cozy flat in NW1.",
+    "images": ["/images/property2_1.jpg", "/images/property2_2.jpg"],
+    "longDescription": "Perfect for small families...",
+    "floorPlan": "/floorplans/property2.pdf",
+    "map": "https://maps.google.com/?q=NW1"
+  },
+  {
+    "id": 4,
+    "type": "Flat",
+    "price": 300000,
+    "bedrooms": 2,
+    "dateAdded": "2024-02-01",
+    "postcode": "NW1",
+    "description": "Cozy flat in NW1.",
+    "images": ["/images/property2_1.jpg", "/images/property2_2.jpg"],
+    "longDescription": "Perfect for small families...",
+    "floorPlan": "/floorplans/property2.pdf",
+    "map": "https://maps.google.com/?q=NW1"
+  },
+  {
+    "id": 5,
+    "type": "Flat",
+    "price": 300000,
+    "bedrooms": 2,
+    "dateAdded": "2024-02-01",
+    "postcode": "NW1",
+    "description": "Cozy flat in NW1.",
+    "images": ["/images/property2_1.jpg", "/images/property2_2.jpg"],
+    "longDescription": "Perfect for small families...",
+    "floorPlan": "/floorplans/property2.pdf",
+    "map": "https://maps.google.com/?q=NW1"
+  },
+  {
+    "id": 6,
+    "type": "Flat",
+    "price": 300000,
+    "bedrooms": 2,
+    "dateAdded": "2024-02-01",
+    "postcode": "NW1",
+    "description": "Cozy flat in NW1.",
+    "images": ["/images/property2_1.jpg", "/images/property2_2.jpg"],
+    "longDescription": "Perfect for small families...",
+    "floorPlan": "/floorplans/property2.pdf",
+    "map": "https://maps.google.com/?q=NW1"
+  }
+]

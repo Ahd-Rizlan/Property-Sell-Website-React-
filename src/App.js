@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import SearchForm from "./components/SearchForm";
+import Results from "./components/Results";
+import PropertyDetails from "./components/PropertyDetails";
+import Favorites from "./components/Favorites";
+import "./styles/App.css";
 
-function App() {
+const App = () => {
+  const [favorites, setFavorites] = useState([]);
+
+  const addToFavorites = (property) => {
+    if (!favorites.find((fav) => fav.id === property.id)) {
+      setFavorites([...favorites, property]);
+    }
+  };
+
+  const removeFromFavorites = (id) => {
+    setFavorites(favorites.filter((fav) => fav.id !== id));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Header />
+        <Routes>
+          <Route path="/" element={<SearchForm />} />
+          <Route
+            path="/results"
+            element={<Results addToFavorites={addToFavorites} />}
+          />
+          <Route
+            path="/property/:id"
+            element={<PropertyDetails addToFavorites={addToFavorites} />}
+          />
+        </Routes>
+        <Favorites
+          favorites={favorites}
+          removeFromFavorites={removeFromFavorites}
+        />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
